@@ -33,18 +33,6 @@ namespace LogicielReservation
             set { _nbTotalTables = value; }
         }
 
-        public bool MyProperty
-        {
-            get { return jumelable; }
-            set { jumelable = value; }
-        }
-
-        public bool monJumelage
-        {
-            get { return _jumelable; }
-            set { _jumelable = value; }
-        }
-
         public string monEtat
         {
             get { return _etat; }
