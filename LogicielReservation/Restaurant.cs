@@ -15,13 +15,15 @@ namespace LogicielReservation
         protected string _nom;
         protected string _motDePasse;
         protected DateTime[] _horaires;
+        protected List<Reservation> _reservations;
 
+        
         #endregion
 
 
         #region getters/setters
 
-        public List<Salle> MesSalles
+        public List<Salle> mesSalles
         {
             get { return _salles; }
             set { _salles = value; }
@@ -58,9 +60,35 @@ namespace LogicielReservation
             set { _nom = value; }
         }
 
+        public List<Reservation> mesReservations
+        {
+            get { return _reservations; }
+            set { _reservations = value; }
+        }
+
         #endregion
 
 
+        #region constructeur
+
+        public Restaurant(String restaurant, string mdp)
+        {
+            monNom = restaurant;
+            mesSalles = new List<Salle>();
+            mesFormules = new List<Formule>();
+            mesReservations = new List<Reservation>();
+            mesPersonnels = new List<Personnel>();
+            monMotDePasse = mdp;
+        }   
+
+        #endregion
+
+
+        #region methodes
+
+
+
+        #endregion
 
     }
 }

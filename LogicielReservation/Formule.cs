@@ -13,9 +13,6 @@ namespace LogicielReservation
         protected DateTime _tempsPresence;
         protected DateTime _tempsPreparation;
 
-        
-        
-
         #endregion
 
 
@@ -42,5 +39,18 @@ namespace LogicielReservation
 
         #endregion
 
+
+        #region constructeur
+
+
+
+        #endregion
+
+
+        #region methodes
+
+
+
+        #endregion
     }
 }

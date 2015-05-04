@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Restauration1
+namespace LogicielReservation
 {
     class Program
     {
