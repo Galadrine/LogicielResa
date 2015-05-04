@@ -7,7 +7,25 @@ namespace LogicielReservation
 {
     class Table
     {
-        private int _nbTotalTables;
+
+        #region variables
+
+        public int _nbTable;
+        protected static int _nbTotalTables;
+        protected string _etat;
+        protected bool _mobile;
+
+        #endregion
+
+
+
+        #region getters/setters
+
+        public int monNumTable
+        {
+            get { return _nbTable; }
+            protected set { _nbTable = value; }
+        }
 
         public int monNombreTotalTables
         {
@@ -15,22 +33,34 @@ namespace LogicielReservation
             set { _nbTotalTables = value; }
         }
 
-        private bool jumelable;
-
         public bool MyProperty
         {
             get { return jumelable; }
             set { jumelable = value; }
         }
 
-
-        private int _nbTable;
-
-        public int monNumTable
+        public bool monJumelage
         {
-            get { return _nbTable; }
-            protected set { _nbTable = value; }
+            get { return _jumelable; }
+            set { _jumelable = value; }
         }
+
+        public string monEtat
+        {
+            get { return _etat; }
+            set { _etat = value; }
+        }
+
+        public bool maMobilite
+        {
+            get { return _mobile; }
+            set { _mobile = value; }
+        }
+
+
+        #endregion
+
+
 
     }
 }

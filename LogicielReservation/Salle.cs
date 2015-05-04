@@ -7,13 +7,31 @@ namespace LogicielReservation
 {
     class Salle
     {
-        private List<Table> _tables;
+        #region variables
+
+        protected string _nom;
+        protected List<Table> _tables;
+
+        #endregion
+
+
+        #region getters/setters
 
         public List<Table> mesTables
         {
             get { return _tables; }
             set { _tables = value; }
         }
+
+        public string monNom
+        {
+            get { return _nom; }
+            set { _nom = value; }
+        }
+
+        #endregion
+
+
 
 
     }

@@ -9,6 +9,16 @@ namespace LogicielReservation
     {
         static void Main(string[] args)
         {
+            #region variables
+
+
+            #endregion
+
+
+            #region getters/setters
+
+
+            #endregion
 
         }
     }
